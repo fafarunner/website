@@ -4,7 +4,7 @@ import { allPosts } from "contentlayer/generated";
 import PostItem from "@/components/post/post-item";
 import LatestPosts from "@/components/post/latest-posts";
 // import Topics from "@/components/post/topics";
-import { basePath } from "@/constants";
+import { basePath, domain } from "@/constants";
 
 export async function generateMetadata({
   params,
@@ -16,10 +16,11 @@ export async function generateMetadata({
     description: `${
       params.lng === "en" ? "Blog" : "博客"
     } - 童话镇里一枝花, 人美歌甜陈一发.`,
-    metadataBase: new URL("https://fafarunner.com"),
+    metadataBase: new URL(domain),
     icons: {
       icon: `${basePath}/logo.jpg`,
     },
+    manifest: `${basePath}/manifest.json`,
   };
 }
 
@@ -42,7 +43,7 @@ export default async function Blog({
       <div className="pb-12 md:pb-20">
         {/* Page header */}
         <div className="max-w-3xl pb-12 text-center md:pb-20 md:text-left">
-          <h1 className="h1 mb-4">Blog</h1>
+          <h1 className="h1 mb-4 text-center text-5xl font-bold">Blog</h1>
           {/*<p className="text-xl text-gray-600">*/}
           {/*  Stay up to date on the latest from Simple and best news from the Dev*/}
           {/*  world.*/}

@@ -48,3 +48,20 @@ export const systemExtensions: SystemExtensions = {
 
 export const pageSize: number = 10;
 export const sitemapUrls = ["download", "releases", "support"];
+
+export const manifest = {
+  name: "FaFa Runner",
+  short_name: "FaFa Runner",
+  description: "Enjoy smooth gameplay, stunning graphics, and endless fun.",
+  start_url: `${basePath}/`,
+  display: "standalone",
+  background_color: "#fff",
+  theme_color: "#fff",
+  icons: [
+    {
+      src: `${domain}/logo.jpg`,
+      sizes: "any",
+      type: "image/jpg",
+    },
+  ],
+};

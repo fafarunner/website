@@ -12,7 +12,7 @@ import CookieYes from "@/components/shared/cookie-yes";
 import ScrollToTop from "@/components/layout/scroll-to-top";
 import { languages } from "@/i18n/settings";
 import Footer from "@/components/layout/footer";
-import { basePath } from "@/constants";
+import { basePath, domain } from "@/constants";
 import { sfPro, inter } from "./fonts";
 import Particles from "./particles";
 import { Providers } from "./providers";
@@ -39,10 +39,11 @@ export async function generateMetadata({
     description: `${
       params.lng === "en" ? "FaFa Runner" : "发发跑酷"
     } - 童话镇里一枝花, 人美歌甜陈一发.`,
-    metadataBase: new URL("https://fafarunner.com"),
+    metadataBase: new URL(domain),
     icons: {
       icon: `${basePath}/logo.jpg`,
     },
+    manifest: `${basePath}/manifest.json`,
   };
 }
 
