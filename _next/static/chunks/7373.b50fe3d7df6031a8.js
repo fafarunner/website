@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[7373],{57373:function(e){e.exports=JSON.parse('{"title":"发发跑酷","menus":{"system":"跟随系统","dark":"黑暗模式","light":"白天模式","goto":"打开发发跑酷"},"languages":{"zh":"中文","en":"英文"}}')}}]);

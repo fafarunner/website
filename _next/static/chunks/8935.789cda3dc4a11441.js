@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[8935],{58935:function(e){e.exports=JSON.parse('{"title":"FaFa Runner","menus":{"system":"Auto Mode","dark":"Dark Mode","light":"Light Mode","goto":"Go to FaFa Runner"},"languages":{"zh":"Chinese","en":"English"}}')}}]);

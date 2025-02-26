@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[3091],{13091:function(e){e.exports=JSON.parse('{"slogan":"享受流畅的游戏、令人惊叹的图形和无尽的乐趣。","get":"获取发发跑酷","comments":"在全球范围内被提及","latest":"最新版本","beta":"测试版","store":"应用商店","more-versions":"更多版本","join":"参与内测","play":"开始玩","load-more":"加载更多","features":"特点","download":"下载"}')}}]);

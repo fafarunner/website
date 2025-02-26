@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[2012],{32012:function(e){e.exports=JSON.parse('{"privacy":"隐私","privacy-description":"您的个人信息不会被滥用。","free":"免费","free-description":"发发跑酷免费使用。无广告、无隐藏付费。","cross-platform":"跨平台","cross-platform-description":"可在Web、移动设备和桌面上使用。","open-source":"代码开源","open-source-description":"源代码是公开的。任何人都可以为该项目做出贡献。"}')}}]);
