@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import { ImageResponse } from "next/og";
-import { basePath } from "@/constants";
+import { domain } from "@/constants";
 
 export const runtime = "edge";
 export const alt = "FaFa Runner";
@@ -27,7 +27,7 @@ export default async function OG() {
         }}
       >
         <img
-          src={`${basePath}/logo.jpg`}
+          src={`${domain}/logo.jpg`}
           alt={alt}
           tw="w-20 h-20 mb-4 opacity-95 rounded-full"
         />

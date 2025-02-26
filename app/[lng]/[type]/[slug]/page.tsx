@@ -1,23 +1,25 @@
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
-// import dynamic from "next/dynamic";
 import PostDate from "@/components/post/post-date";
 import { Mdx } from "@/components/mdx/mdx";
 import PostNav from "@/components/post/post-nav";
-import { basePath, domain } from "@/constants";
+import { domain } from "@/constants";
 import { allPosts } from "contentlayer/generated";
+import { lngRegex } from "@/i18n/settings";
 import type { Metadata } from "next";
 
-// const DiscussionEmbed = dynamic(
-//     () => import('disqus-react').then((mod) => mod.DiscussionEmbed),
-//     { ssr: false }
-// )
-
 export async function generateStaticParams() {
-  return allPosts.map((post) => ({
-    slug: post.slug,
-  }));
+  const urls = Array.from(
+    new Set(allPosts.map((post) => post.slug.replaceAll(lngRegex, ""))),
+  );
+  return urls.map((slug) => {
+    const slugs = slug.split("/");
+    return {
+      type: slugs.at(0),
+      slug: slugs.at(1),
+    };
+  });
 }
 
 export async function generateMetadata({
@@ -38,9 +40,9 @@ export async function generateMetadata({
     description,
     metadataBase: new URL(domain),
     icons: {
-      icon: `${basePath}/logo.jpg`,
+      icon: `${domain}/logo.jpg`,
     },
-    manifest: `${basePath}/manifest.json`,
+    manifest: `${domain}/manifest.json`,
   };
 }
 
