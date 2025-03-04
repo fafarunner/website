@@ -18,8 +18,8 @@ importers:
         specifier: ^21.1.1
         version: 21.1.1
       '@primer/octicons-react':
-        specifier: ^19.15.0
-        version: 19.15.0(react@18.3.1)
+        specifier: ^19.15.1
+        version: 19.15.1(react@18.3.1)
       '@tsparticles/engine':
         specifier: ^3.8.1
         version: 3.8.1
@@ -1196,8 +1196,8 @@ packages:
     resolution: {integrity: sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==}
     engines: {node: '>=14'}
 
-  '@primer/octicons-react@19.15.0':
-    resolution: {integrity: sha512-EwRnvR5bK44CoLo/Fq8cQrHzuWJf3FQb5jAoA0pacbCNOMsFiX5hXUVKSd/men1s9qEWNP2Hhthlt+bi8x4uzA==}
+  '@primer/octicons-react@19.15.1':
+    resolution: {integrity: sha512-U9g8sj2ON2cKF1jvs3cEfhW51BNkOXjbdi5qPMSY5e4T7KVKR1gK9BZ/gpB4oTqkjoL2dikaWXdnH8vhwyR6lg==}
     engines: {node: '>=8'}
     peerDependencies:
       react: '>=16.3'
@@ -3399,6 +3399,7 @@ packages:
   eslint@8.57.1:
     resolution: {integrity: sha512-ypowyDxpVSYpkXr9WPv2PAZCtNip1Mv5KTW0SCurXv/9iOpcrH9PaqUElksqEB6pChqHGDRCFTyrZlGhnLNGiA==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+    deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
     hasBin: true
 
   espree@9.6.1:
@@ -6842,7 +6843,7 @@ snapshots:
   '@pkgjs/parseargs@0.11.0':
     optional: true
 
-  '@primer/octicons-react@19.15.0(react@18.3.1)':
+  '@primer/octicons-react@19.15.1(react@18.3.1)':
     dependencies:
       react: 18.3.1
 
