@@ -151,8 +151,8 @@ importers:
         specifier: ^19.8.0
         version: 19.8.0
       '@octokit/openapi-types':
-        specifier: ^24.0.0
-        version: 24.0.0
+        specifier: ^24.1.0
+        version: 24.1.0
       '@tailwindcss/forms':
         specifier: ^0.5.10
         version: 0.5.10(tailwindcss@3.4.17)
@@ -983,8 +983,8 @@ packages:
   '@octokit/openapi-types@23.0.1':
     resolution: {integrity: sha512-izFjMJ1sir0jn0ldEKhZ7xegCTj/ObmEDlEfpFrx4k/JyZSMRHbO3/rBwgE7f3m2DHt+RrNGIVw4wSmwnm3t/g==}
 
-  '@octokit/openapi-types@24.0.0':
-    resolution: {integrity: sha512-os8hmzrBPC3PDzXq93/9vBcxMvb90yw2SF76ANon+eP1HzVyd+TshkAkMX6bIm3bY5T3uXieQFDibcc35vM9mQ==}
+  '@octokit/openapi-types@24.1.0':
+    resolution: {integrity: sha512-FnYcCZ7MV5dEB+E5ejjhFeg6IFLDcaCCCYcISBeSuTN891Oju1QPnR7k6v/JTwcn2+LjcVhVRcTtUIkVMyzHiw==}
 
   '@octokit/plugin-paginate-rest@11.4.2':
     resolution: {integrity: sha512-BXJ7XPCTDXFF+wxcg/zscfgw2O/iDPtNSkwwR1W1W5c4Mb3zav/M2XvxQ23nVmKj7jpweB4g8viMeCQdm7LMVA==}
@@ -6941,7 +6941,7 @@ snapshots:
 
   '@octokit/openapi-types@23.0.1': {}
 
-  '@octokit/openapi-types@24.0.0': {}
+  '@octokit/openapi-types@24.1.0': {}
 
   '@octokit/plugin-paginate-rest@11.4.2(@octokit/core@6.1.4)':
     dependencies:
