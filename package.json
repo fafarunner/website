@@ -9,6 +9,11 @@
     "prepare": "husky",
     "start": "next start"
   },
+  "overrides": {
+    "muse-ui": {
+      "react-hook-form": "^7.56.1"
+    }
+  },
   "dependencies": {
     "@hookform/resolvers": "^5.1.1",
     "@next/third-parties": "14.2.28",
@@ -82,11 +87,6 @@
   },
   "packageManager": "pnpm@10.6.1",
   "engines": {
-    "node": "^18"
-  },
-  "overrides": {
-    "muse-ui": {
-      "react-hook-form": "^7.56.1"
-    }
+    "node": ">=18"
   }
 }
