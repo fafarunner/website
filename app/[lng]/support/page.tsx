@@ -79,7 +79,7 @@ const apps = [
     demo: (
       <MdEmail className="h-24 w-24 text-gray-600 transition-all dark:text-white/80" />
     ),
-    url: "mailto:fafarunner-support@insco.io",
+    url: "mailto:support@fafarunner.com",
     large: false,
   },
   {
