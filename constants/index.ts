@@ -5,7 +5,7 @@ export const cacheThemeKey: string = "__fafa_runner_theme__";
 
 export const domain =
   process.env.NODE_ENV === "production"
-    ? "https://www.fafarunner.com"
+    ? "https://fafarunner.com"
     : "http://localhost:3000";
 
 export const platformNames: SystemOSName = {
