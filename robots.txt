@@ -3,4 +3,4 @@ Allow: /
 Disallow: /zh/
 Disallow: /_next/
 
-Sitemap: https://www.fafarunner.com/sitemap.xml
+Sitemap: https://fafarunner.com/sitemap.xml
