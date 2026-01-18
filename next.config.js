@@ -1,11 +1,22 @@
 const { withContentlayer } = require("next-contentlayer2");
 
+const basePath = process.env.NEXT_PUBLIC_VERCEL_ENV === "production" ? "" : "";
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  basePath,
   trailingSlash: true,
   reactStrictMode: true,
   swcMinify: true,
-  output: "export",
+  async redirects() {
+    return [
+      {
+        source: "/issues",
+        destination: "https://github.com/fafarunner/fafarunner/issues",
+        permanent: false,
+      },
+    ];
+  },
   images: {
     dangerouslyAllowSVG: true,
     remotePatterns: [
