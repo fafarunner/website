@@ -13,6 +13,7 @@ import useScroll from "@/lib/hooks/use-scroll";
 import LngDropdown from "./lng-dropdown";
 import ThemeDropdown from "./theme-dropdown";
 import { useTranslation } from "@/i18n/client";
+import { basePath } from "@/constants";
 import type { LngProps } from "@/types/i18next-lng";
 
 export default function Header(props: LngProps) {
@@ -40,7 +41,7 @@ export default function Header(props: LngProps) {
         >
           <Image
             className="mr-2 rounded-sm"
-            src={"/logo.jpg"}
+            src={`${basePath}/logo.jpg`}
             alt="FaFa Runner Logo"
             width="30"
             height="30"

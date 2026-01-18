@@ -1,8 +1,5 @@
 # websites
 
-[![Deploy](https://github.com/fafarunner/websites/actions/workflows/deploy-web.yml/badge.svg)](https://github.com/fafarunner/websites/actions/workflows/deploy-web.yml)
-[![PR](https://github.com/fafarunner/websites/actions/workflows/pr.yml/badge.svg)](https://github.com/fafarunner/websites/actions/workflows/pr.yml)
-
 ## Setup
 
 ```bash

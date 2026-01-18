@@ -3,7 +3,7 @@ import {
   AnimatePresence,
   motion,
   useAnimation,
-  type AnimationGeneratorName,
+  type AnimationGeneratorType,
 } from "framer-motion";
 
 export default function Leaflet({
@@ -16,7 +16,7 @@ export default function Leaflet({
   const leafletRef = useRef<HTMLDivElement>(null);
   const controls = useAnimation();
   const transitionProps = {
-    type: "spring" as AnimationGeneratorName,
+    type: "spring" as AnimationGeneratorType,
     stiffness: 500,
     damping: 30,
   };
