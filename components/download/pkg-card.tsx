@@ -23,7 +23,7 @@ export default function PkgCard({
           </span>
           <div className="mb-2 mt-2 flex flex-col px-2">
             <CopyBlock
-              text="brew install kjxbyz/casks/fafarunner"
+              text={`brew tap qiazo/casks\nbrew install fafarunner`}
               language="bash"
               theme={{ mode: theme as any }}
               showLineNumbers
@@ -59,7 +59,7 @@ export default function PkgCard({
           <span className="mt-6 text-gray-600 dark:text-white/80">Scoop</span>
           <div className="mb-2 mt-2 flex flex-col px-2">
             <CopyBlock
-              text={`scoop bucket add kjxbyz_scoop-bucket https://github.com/kjxbyz/scoop-bucket\nscoop install kjxbyz_scoop-bucket/fafarunner`}
+              text={`scoop bucket add qiazo_scoop-bucket https://github.com/qiazo/scoop-bucket\nscoop install qiazo_scoop-bucket/fafarunner`}
               language="bash"
               theme={{ mode: theme as any }}
               showLineNumbers

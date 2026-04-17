@@ -13,9 +13,40 @@ export default function StoreCard({
 
   const storeLinks = useMemo(() => {
     const links: Record<SystemOS, React.ReactNode> = {
-      ios: null,
+      ios: (
+        <Link
+          className="mt-2"
+          target="_blank"
+          href="https://apps.apple.com/app/id6446263696"
+        >
+          <img
+            width="220"
+            alt="Get it on App Store"
+            src="/images/Download-on-the-App-Store.svg"
+            loading="lazy"
+            decoding="async"
+          />
+        </Link>
+      ),
       android: (
         <>
+          <span className="mt-2 text-gray-600 dark:text-white/80">
+            Google Play
+          </span>
+          <div className="mb-2 mt-2 flex flex-col px-2">
+            <Link
+              target="_blank"
+              href="https://play.google.com/store/apps/details?id=com.chenyifaer.fafarunner"
+            >
+              <img
+                width="220"
+                alt="Get it on Google Play"
+                src="/images/Download-on-the-Google-Play.png"
+                loading="lazy"
+                decoding="async"
+              />
+            </Link>
+          </div>
           <span className="mt-2 text-gray-600 dark:text-white/80">Amazon</span>
           <div className="mb-2 mt-2 flex flex-col px-2">
             <Link target="_blank" href="https://www.amazon.com/dp/B0DHZ8N2BJ">
@@ -47,7 +78,21 @@ export default function StoreCard({
           </div>
         </>
       ),
-      macos: null,
+      macos: (
+        <Link
+          className="mt-2"
+          target="_blank"
+          href="https://apps.apple.com/app/id6446263696?mt=12"
+        >
+          <img
+            width="220"
+            alt="Get it on App Store"
+            src="/images/Download-on-the-Mac-App-Store.svg"
+            loading="lazy"
+            decoding="async"
+          />
+        </Link>
+      ),
       windows: (
         <>
           <Link

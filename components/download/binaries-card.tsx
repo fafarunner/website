@@ -14,27 +14,7 @@ export default function BinariesCard({
 
   const binaryLinks = useMemo(() => {
     const links: Record<SystemOS, React.ReactNode> = {
-      ios: (
-        <>
-          <ul className="mt-2">
-            {assets.map((value: Asset) => {
-              return (
-                <li
-                  key={value.id}
-                  className="w-fit rounded-sm px-2 py-1.5 hover:bg-gray-200 dark:hover:bg-gray-400"
-                >
-                  <Link
-                    className="text-gray-600 dark:text-white/80"
-                    href={value.browser_download_url || ""}
-                  >
-                    {value.name}
-                  </Link>
-                </li>
-              );
-            })}
-          </ul>
-        </>
-      ),
+      ios: null,
       android: (
         <>
           <ul className="mt-2">
@@ -101,6 +81,28 @@ export default function BinariesCard({
                 })}
             </ul>
           </div>
+          {/*<div className="mb-2 mt-2 flex flex-col px-2">*/}
+          {/*  <span className="mb-2 text-gray-600 dark:text-white/80">Arm64</span>*/}
+          {/*  <ul>*/}
+          {/*    {assets*/}
+          {/*      .filter((value: Asset) => value.name?.includes("arm64"))*/}
+          {/*      .map((value: Asset) => {*/}
+          {/*        return (*/}
+          {/*          <li*/}
+          {/*            key={value.id}*/}
+          {/*            className="w-fit rounded-sm px-2 py-1.5 hover:bg-gray-200 dark:hover:bg-gray-400"*/}
+          {/*          >*/}
+          {/*            <Link*/}
+          {/*              className="text-gray-600 dark:text-white/80"*/}
+          {/*              href={value.browser_download_url || ""}*/}
+          {/*            >*/}
+          {/*              {value.name}*/}
+          {/*            </Link>*/}
+          {/*          </li>*/}
+          {/*        );*/}
+          {/*      })}*/}
+          {/*  </ul>*/}
+          {/*</div>*/}
         </>
       ),
       linux: (
@@ -128,7 +130,7 @@ export default function BinariesCard({
             </ul>
           </div>
           <div className="mb-2 mt-2 flex flex-col px-2">
-            <span className="mb-2 text-gray-600 dark:text-white/80">arm64</span>
+            <span className="mb-2 text-gray-600 dark:text-white/80">Arm64</span>
             <ul>
               {assets
                 .filter((value: Asset) => value.name?.includes("aarch64"))
@@ -156,7 +158,7 @@ export default function BinariesCard({
     return links;
   }, [assets]);
 
-  return (
+  return binaryLinks[platform] ? (
     <div className="flex min-h-64 w-full max-w-screen-xl animate-fade-up flex-col rounded-xl border border-gray-200 p-4 hover:shadow-md dark:border-gray-700 dark:hover:shadow-gray-700">
       <span className="text-xl font-bold">{t("binaries")}</span>
       <span className="text-base text-gray-600 dark:text-white/80">
@@ -166,5 +168,5 @@ export default function BinariesCard({
         {binaryLinks[platform]}
       </div>
     </div>
-  );
+  ) : null;
 }
