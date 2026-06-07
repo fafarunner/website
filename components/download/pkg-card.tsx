@@ -23,7 +23,7 @@ export default function PkgCard({
           </span>
           <div className="mb-2 mt-2 flex flex-col px-2">
             <CopyBlock
-              text={`brew tap qiazo/casks\nbrew install fafarunner`}
+              text={`brew tap fafarunner/casks\nbrew install fafarunner`}
               language="bash"
               theme={{ mode: theme as any }}
               showLineNumbers
@@ -37,7 +37,7 @@ export default function PkgCard({
           <span className="mt-4 text-gray-600 dark:text-white/80">WinGet</span>
           <div className="mb-2 mt-2 flex flex-col px-2">
             <CopyBlock
-              text="winget install --id Insco.FaFaRunner"
+              text="winget install --id FaFaRunner.FaFaRunner"
               language="bash"
               theme={{ mode: theme as any }}
               showLineNumbers
@@ -59,7 +59,7 @@ export default function PkgCard({
           <span className="mt-6 text-gray-600 dark:text-white/80">Scoop</span>
           <div className="mb-2 mt-2 flex flex-col px-2">
             <CopyBlock
-              text={`scoop bucket add qiazo_scoop-bucket https://github.com/qiazo/scoop-bucket\nscoop install qiazo_scoop-bucket/fafarunner`}
+              text={`scoop bucket add fafarunner_scoop-bucket https://github.com/fafarunner/scoop-bucket\nscoop install fafarunner_scoop-bucket/fafarunner`}
               language="bash"
               theme={{ mode: theme as any }}
               showLineNumbers
